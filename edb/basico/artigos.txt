@@ -1,0 +1,11 @@
+
+
+Basico
+https://medium.com/@tssovi/abstract-data-type-adt-in-python-33e6ce1f961e
+
+Listas Encadeadas
+https://realpython.com/linked-lists-python/
+https://www.tutorialspoint.com/python_data_structure/python_linked_lists.htm
+https://www.openbookproject.net/thinkcs/python/english2e/ch19.html
+
+
