@@ -11,7 +11,7 @@ class Pilha:
     def pop(self):
         return self.items.pop()
 
-    def peek(self):
+    def top(self):
         return self.items[len(self.items) - 1]
 
     def size(self):
