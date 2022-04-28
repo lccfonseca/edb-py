@@ -12,6 +12,7 @@ from edb.basico.lista import Lista
 
 # Como solução para este exercício, foi necessário a criação de um novo TAD (Classe),
 # derivado do TAD Lista
+
 class ListaEx01(Lista):
 
     def __init__(self, lst=None):
@@ -21,7 +22,7 @@ class ListaEx01(Lista):
         return (self.size() % 2) == 0
 
     def reverse(self):
-        l_res = Lista()
+        l_res = ListaEx01()
         l_clone = copy.deepcopy(self)
         while not l_clone.is_empty():
             l_res.insert_eol(l_clone.remove_eol())
@@ -29,7 +30,7 @@ class ListaEx01(Lista):
 
     def half_list_sum(self):
         if self.e_par():
-            l_res = Lista()
+            l_res = ListaEx01()
             l_clone = copy.deepcopy(self)
             while not l_clone.is_empty():
                 soma = l_clone.remove_bol() + l_clone.remove_eol()
