@@ -12,6 +12,10 @@ from edb.basico.lista import Lista
 # e) Copiar uma lista l1 para uma lista l2;
 # f) Concatenar uma lista l1 com uma lista l2;
 # g) Intercalar l1 e l2;
+# Exercícios extra que não se aplicam a Lista Ordenada, devem ser aplicados na super classe
+# h) Inserir um elemento no início da lista;
+# i) Inserir um elemento no meio da lista;
+# j) Remover um elemento da Lista;
 
 class ListaEx02(Lista):
 
