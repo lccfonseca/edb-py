@@ -21,6 +21,10 @@ class Lista:
         # Refatorar
         self.items.append(item)
 
+    def insert_mol(self, item):
+        # Refatorar
+        self.items.append(item)
+
     def insert_eol(self, item):
         self.items.append(item)
 
@@ -28,6 +32,10 @@ class Lista:
         first = self.items[0]
         del self.items[0]
         return first
+
+    def remove_mol(self):
+        # Refatorar
+        return self.items.pop()
 
     def remove_eol(self):
         return self.items.pop()
