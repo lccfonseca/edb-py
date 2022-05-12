@@ -11,4 +11,5 @@ https://www.openbookproject.net/thinkcs/python/english2e/ch19.html
 Materiais
 https://www.cos.ufrj.br/~bfgoldstein/python/compI/slides/
 
+https://algoritmosempython.com.br/cursos/algoritmos-python/pesquisa-ordenacao/pesquisa-binaria/
 

@@ -18,12 +18,11 @@ class Lista:
         return self.items == []
 
     def insert_bol(self, item):
-        # Refatorar
-        self.items.append(item)
+        self.items.insert(0, item)
 
     def insert_mol(self, item):
-        # Refatorar
-        self.items.append(item)
+        m = len(self.items) // 2
+        self.items = self.items[0:m] + [item] + self.items[m:]
 
     def insert_eol(self, item):
         self.items.append(item)
@@ -34,8 +33,10 @@ class Lista:
         return first
 
     def remove_mol(self):
-        # Refatorar
-        return self.items.pop()
+        m = len(self.items) // 2
+        middle = self.items[m]
+        del self.items[m]
+        return middle
 
     def remove_eol(self):
         return self.items.pop()
@@ -46,3 +47,8 @@ class Lista:
     def print_list(self):
         for item in self.items:
             print(item)
+
+
+class ListaE:
+    def __init__(self):
+        pass
