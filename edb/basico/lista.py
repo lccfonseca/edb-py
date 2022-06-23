@@ -131,3 +131,17 @@ class ListaEncadeada:
                 return
             previous_node = node
         raise Exception("Node with data '%s' not found" % target_node_data)
+
+
+class DoubleNode:
+    def __init__(self, data):
+        self.prev = None
+        self.data = data
+        self.next = None
+
+    def __repr__(self):
+        return self.data
+
+class ListaDuplamenteEncadeada:
+    def __init__(self, nodes=None):
+        pass
