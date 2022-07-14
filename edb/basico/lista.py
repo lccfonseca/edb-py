@@ -144,4 +144,40 @@ class DoubleNode:
 
 class ListaDuplamenteEncadeada:
     def __init__(self, nodes=None):
-        pass
+        def __init__(self, nodes=None):
+            self.head = None
+            if nodes is not None:
+                node = DoubleNode(data=nodes.pop(0))
+                self.head = node
+                for elem in nodes:
+                    node.next = DoubleNode(data=elem)
+                    node = node.next
+
+    def __repr__(self):
+        node = self.head
+        nodes = []
+        # Mudar critério de parada
+        while node is not None:
+            nodes.append(node.data)
+            node = node.next
+        nodes.append("None")
+        return " -> ".join(nodes)
+
+    def __iter__(self):
+        node = self.head
+        # Mudar criterio de parada
+        while node is not None:
+            yield node
+            node = node.next
+
+    def insert(self, item):
+        novo = DoubleNode()
+        novo.data = item
+
+        if self.head.next is None:
+            novo.next = novo
+            novo.prev = novo
+            self.head.next = novo
+            self.head.prev = novo
+
+
